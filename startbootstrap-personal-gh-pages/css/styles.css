@@ -11746,4 +11746,51 @@ html {
     transform: scale(1.05);
     box-shadow: 0 8px 25px rgba(0, 212, 255, 0.15);
 }
+
+/* imagem dos cards de projetos */
+.project-img {
+  flex: 0 0 40%;
+  width: 40%;
+  align-self: stretch;
+  min-height: 280px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 767.98px) {
+  .card-body .d-flex {
+    flex-direction: column;
+  }
+  .card-body .d-flex .project-img {
+    width: 100%;
+    height: 220px;
+    min-height: 0;
+    flex: none;
+    order: -1; /* imagem em cima do texto no celular */
+  }
+}
+/* botão flutuante do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
 }
